@@ -13,7 +13,9 @@ brew install <formula>
 
 <!-- This section is automatically updated by GoReleaser -->
 
-- `gitusr` - CLI tool for managing and switching between git user identities
+| Formula | Description | Repository |
+|---------|-------------|------------|
+| `gitusr` | CLI tool for managing and switching between git user identities | [northwang-lucky/gitusr](https://github.com/northwang-lucky/gitusr) |
 
 ## About This Tap
 
