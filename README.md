@@ -6,14 +6,14 @@ Personal Homebrew tap for [northwang-lucky](https://github.com/northwang-lucky)'
 
 ```bash
 brew tap northwang-lucky/tap
-brew install <cask>
+brew install <formula>
 ```
 
-## Available Casks
+## Available Formulae
 
 <!-- This section is automatically updated by GoReleaser -->
 
-| Cask | Description | Repository |
+| Formula | Description | Repository |
 |---------|-------------|------------|
 | `gitusr` | CLI tool for managing and switching between git user identities | [northwang-lucky/gitusr](https://github.com/northwang-lucky/gitusr) |
 
