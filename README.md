@@ -16,6 +16,7 @@ brew install <formula>
 | Formula | Description | Repository |
 |---------|-------------|------------|
 | `gitusr` | CLI tool for managing and switching between git user identities | [northwang-lucky/gitusr](https://github.com/northwang-lucky/gitusr) |
+| `ssh-tunnel-daemon` | CLI tool for managing SSH tunnels | [northwang-lucky/ssh-tunnel-daemon](https://github.com/northwang-lucky/ssh-tunnel-daemon) |
 
 ## About This Tap
 
