@@ -5,13 +5,13 @@
 class SshTunnelDaemon < Formula
   desc "CLI tool for managing SSH tunnels"
   homepage "https://github.com/northwang-lucky/ssh-tunnel-daemon"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/northwang-lucky/ssh_tunnel_daemon/releases/download/v1.1.0/ssh-tunnel-daemon_1.1.0_darwin_amd64.tar.gz"
-      sha256 "562fe193a690227d39e2a901f89c714c4b996ae2dbeb687c319c8eb49444a69a"
+      url "https://github.com/northwang-lucky/ssh_tunnel_daemon/releases/download/v1.2.0/ssh-tunnel-daemon_1.2.0_darwin_amd64.tar.gz"
+      sha256 "3d688f458da6504485ffdd8716fd8100395a3edc464b4c29642bc2d3aadcd2fd"
 
       define_method(:install) do
         bin.install "ssh-tunnel-daemon"
@@ -20,8 +20,8 @@ class SshTunnelDaemon < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/northwang-lucky/ssh_tunnel_daemon/releases/download/v1.1.0/ssh-tunnel-daemon_1.1.0_darwin_arm64.tar.gz"
-      sha256 "1a6d673bdbbf1d911898d2fd048cc8d72357c8f17f84dace787914c16a0394d5"
+      url "https://github.com/northwang-lucky/ssh_tunnel_daemon/releases/download/v1.2.0/ssh-tunnel-daemon_1.2.0_darwin_arm64.tar.gz"
+      sha256 "0461dd9bdf414c4cd6b125aa3ad34c9a5594885def49f9df3247a8b7d4612abf"
 
       define_method(:install) do
         bin.install "ssh-tunnel-daemon"
@@ -33,8 +33,8 @@ class SshTunnelDaemon < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/northwang-lucky/ssh_tunnel_daemon/releases/download/v1.1.0/ssh-tunnel-daemon_1.1.0_linux_amd64.tar.gz"
-      sha256 "789dd5dcd923a42c28dbab916e06e35b196b2798c09d0c744d12fdc6e81594be"
+      url "https://github.com/northwang-lucky/ssh_tunnel_daemon/releases/download/v1.2.0/ssh-tunnel-daemon_1.2.0_linux_amd64.tar.gz"
+      sha256 "b2ee4bad05d41b9c5f24b3e246a4e4a8e4c6a7dfb40a814599f790dd5c8eb056"
       define_method(:install) do
         bin.install "ssh-tunnel-daemon"
         bin.install_symlink "ssh-tunnel-daemon" => "sshtnl"
@@ -42,8 +42,8 @@ class SshTunnelDaemon < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/northwang-lucky/ssh_tunnel_daemon/releases/download/v1.1.0/ssh-tunnel-daemon_1.1.0_linux_arm64.tar.gz"
-      sha256 "396bc13752a6746fdddde002041a282669a6673cb461a7da29231501a3f3248d"
+      url "https://github.com/northwang-lucky/ssh_tunnel_daemon/releases/download/v1.2.0/ssh-tunnel-daemon_1.2.0_linux_arm64.tar.gz"
+      sha256 "9b867b255a805ce7b877b3c6fce0e7611b6753669a88b4939a961adf4d5f8677"
       define_method(:install) do
         bin.install "ssh-tunnel-daemon"
         bin.install_symlink "ssh-tunnel-daemon" => "sshtnl"
