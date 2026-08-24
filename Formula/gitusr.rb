@@ -5,13 +5,13 @@
 class Gitusr < Formula
   desc "CLI tool for managing and switching between git user identities"
   homepage "https://github.com/northwang-lucky/gitusr"
-  version "1.2.0"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/northwang-lucky/gitusr/releases/download/v1.2.0/gitusr_1.2.0_darwin_amd64.tar.gz"
-      sha256 "8f40d687c534370bd15f7577a16d4871642edb7ca739cacb8d6bf1cc098f3cad"
+      url "https://github.com/northwang-lucky/gitusr/releases/download/v1.3.0/gitusr_1.3.0_darwin_amd64.tar.gz"
+      sha256 "c2a72f9af49ee193117b065fa46a6362e1f8cf8677a1b7ec9fc0c93ed7205438"
 
       define_method(:install) do
         bin.install "gitusr"
@@ -19,8 +19,8 @@ class Gitusr < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/northwang-lucky/gitusr/releases/download/v1.2.0/gitusr_1.2.0_darwin_arm64.tar.gz"
-      sha256 "4442104c5101c8e73adaeef1230a4f87241fa7e43db1144850bfc42e89711545"
+      url "https://github.com/northwang-lucky/gitusr/releases/download/v1.3.0/gitusr_1.3.0_darwin_arm64.tar.gz"
+      sha256 "ad701eb90892cbb7a4b68b656e40ebd9d4f24c65b34400f89d6243c3cf8fb614"
 
       define_method(:install) do
         bin.install "gitusr"
@@ -31,16 +31,16 @@ class Gitusr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/northwang-lucky/gitusr/releases/download/v1.2.0/gitusr_1.2.0_linux_amd64.tar.gz"
-      sha256 "a843bd1755fcd06a7e009017f893de9396ddfd09d364d83d6f1aaae76c34f368"
+      url "https://github.com/northwang-lucky/gitusr/releases/download/v1.3.0/gitusr_1.3.0_linux_amd64.tar.gz"
+      sha256 "af35fdec6734ff7e4b7e5384a3c6a451d9fefa15522b039d5f997f4ffb505890"
       define_method(:install) do
         bin.install "gitusr"
         bin.install_symlink "gitusr" => "gu"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/northwang-lucky/gitusr/releases/download/v1.2.0/gitusr_1.2.0_linux_arm64.tar.gz"
-      sha256 "f75181c7f889e4eb70f4797ee3ee9855302571ca93d7263f87cfd8355bea6520"
+      url "https://github.com/northwang-lucky/gitusr/releases/download/v1.3.0/gitusr_1.3.0_linux_arm64.tar.gz"
+      sha256 "4b34673536fc341d9d639f22ad9291cf962596054c7baacd83a2a5b603075603"
       define_method(:install) do
         bin.install "gitusr"
         bin.install_symlink "gitusr" => "gu"
